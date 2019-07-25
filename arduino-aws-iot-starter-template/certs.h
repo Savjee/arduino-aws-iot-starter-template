@@ -1,0 +1,25 @@
+#ifndef certs_h
+#define certs_h
+
+// Amazon's root CA. This should be the same for everyone.
+const char AWS_CERT_CA[] = "-----BEGIN CERTIFICATE-----\n" \
+"MIIDQTChkiG9w0CAimfz5m/jAo5gAwIBBgkqBAkPmljZbyjQsAgITBmy4vB4iANF\n" \
+"ADA5MGQW1hem5sGQW1hemDVVUzEMQxBBDVhMQsYDVQQQGEwJQDExBBbWF6\n" \
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\n" \
+"-----END CERTIFICATE-----\n";
+
+// The private key for your device
+const char AWS_CERT_PRIVATE[] = "-----BEGIN RSA PRIVATE KEY-----\n" \
+"MIIEpQIQEAphsi45x87olzmdBqAOrHfZCADpJvguBAAKCZQDmHuAsjyoXwRxu9Xw\n" \
+"Ywi735aadERdTgZL84y5cgvgoBsi+tKbmi2Atu9XzQb956B7kf51X0goBGNO4oeA\n" \
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\n" \
+"-----END RSA PRIVATE KEY-----\n";
+
+// The certificate for your device
+const char AWS_CERT_CRT[] = "-----BEGIN CERTIFICATE-----\n" \
+"MIIDwWH8yD0aOIBAgIUPCdJZxYDQYJKoZIhvcVfWTCCAkGgA65JHHAIAQEPMYwNL\n" \
+"BQAwAdlYiBTZX2aWN1hFtYXpJ1UECcyBPTTFLMem9uIFEkGwxCQWvbi5lPUjb20g\n" \
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\n" \
+"-----END CERTIFICATE-----\n";
+
+#endif
