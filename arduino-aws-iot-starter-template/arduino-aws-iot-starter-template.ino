@@ -78,7 +78,7 @@ void sendJsonToAWS()
 {
   StaticJsonDocument<128> jsonDoc;
   JsonObject stateObj = jsonDoc.createNestedObject("state");
-  JsonObject reportedObj = jsonDoc.createNestedObject("reported");
+  JsonObject reportedObj = stateObj.createNestedObject("reported");
   
   // Write the temperature & humidity. Here you can use any C++ type (and you can refer to variables)
   reportedObj["temperature"] = 23.76;
